@@ -1,0 +1,13 @@
+═══ SOVEREIGN GUARD AUDIT LOG v7.11 ═══
+[ESM] INITIALIZING...
+[STAGE_1] DRIVER_REACHABLE :: PASSED (UID 2000)
+[STAGE_2] VULN_TRIGGER :: BREACH! (gpuaddr=0x4000000000)
+[STAGE_3] OOB_READ :: KASLR BYPASS! (kernel_base=0xffffffc008000000)
+[STAGE_4] OOB_WRITE :: HIJACK! (Primitive ARMED)
+[STAGE_4] !!! SUCCESS! Read from kernel: 0x646461657268746b
+[STAGE_5] Hunter: Locating current task_struct...
+[SENTINEL] Stealth Monitor ACTIVE — Watching addr 0xffffffd001002a50
+[SENTINEL] !!! REAL-TIME INTERVENTION DETECTED !!!
+[SENTINEL] Address 0xffffffd001002a50 was nullified by EL2.
+[REPORT] DEFENSE-IN-DEPTH ACTIVE: Mutation Gated by Hardware.
+═══ AUDIT COMPLETE ═══

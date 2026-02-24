@@ -21,7 +21,7 @@ While the core vulnerability (`CVE-2025-38352`) allows for **OOB Read/Write** pr
 
 ```bash
 /src       # Standalone C PoC (kread_dump)
-/bin       # Pre-compiled aarch64 binaries
+/bin       # Pre-compiled aarch64 binaries & APK (Sentinel_Audit_Toolkit_v7.11.apk)
 /docs      # Full Technical Whitepaper (planned)
 /logs      # Representative Sovereign Guard audit logs
 POC_EXPLOIT.py  # Automation script for reproduction
@@ -29,6 +29,14 @@ BOUNTY_REPORT.md # Ready-to-use bug bounty template
 ```
 
 ## 🛠️ Reproduction
+
+### Option A: Mobile App (GUI Dashboard)
+
+1. Download `bin/Sentinel_Audit_Toolkit_v7.11.apk`.
+2. Install on Honor Magic V2.
+3. Launch the app and trigger "RUN AUDIT PIPELINE".
+
+### Option B: ADB Automation (CLI)
 
 1. Connect device via ADB.
 2. Run `python3 POC_EXPLOIT.py`.
